@@ -1,20 +1,9 @@
-const localAPI = "https://www.mailjet.com/";
-const localAPIpopular = "http://localhost:3000/popular";
-let EUKOS = [];
-let popular = [];
+// INTERACT WITH THE DOM
 
-const getEUKOSData = () => {
-  return fetch(localAPI).then((response) => response.json());
-};
-const getPopular = () => {
-  return fetch(localAPIpopular).then((response) => response.json());
-};
+document.addEventListener('DOMContentLoaded', () => {
+    // Call search for name of the shop function
+    searchEUKOSOnlineShop();
 
-document.addEventListener("DOMContentLoaded", async () => {
-  kDramaData = await getEUKOSData();
-  console.log(EUKOSData);
-
-  popular = await getPopular();
-  console.log(popular);
-});
-Footer
+    // POST user info to the server
+    postUserInfo();
+})
