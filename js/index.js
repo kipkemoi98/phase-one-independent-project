@@ -97,6 +97,9 @@ function postUserInfo(){
             alert(`${result.userName}, your data has been saved successfully!`)
         })
 
-        event.target.reset() //Reset form
+        event.target.reset()
     })
 } 
+showlogin.addEventListener("click", () => {
+    popuplogin.style.display = "block";
+  });
