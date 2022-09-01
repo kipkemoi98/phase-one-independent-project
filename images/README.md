@@ -33,3 +33,4 @@ This is a simple online liquor shop website that can save your time visiting web
 * Add your code
 * Commit and push
 * Create a pull request
+* push the pull request
