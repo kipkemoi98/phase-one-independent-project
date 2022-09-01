@@ -175,6 +175,14 @@
   #hide {
     display: inline-flex;
   }
-  #wine-shop{
-    height: 20vh;
+  .main-welcome {
+    display: flex;
+    gap: 90px;
+  }
+  .main-welcome-msg {
+    width: 500px;
+    height: 200px;
+  }
+  .main-welcome-msg {
+    margin-top: 80px;
   }
