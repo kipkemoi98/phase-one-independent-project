@@ -18,14 +18,14 @@ function fetchData(searchInput){
         if (result.length === 0){
             alert('No other shop matching EUKOS')
         } else {
-            for (let university of result){
+            for (let EUKOSOnlineShop of result){
                 const shName = onlineshop.name;
-                const nameParagraph = document.createElement('p')
+                const nameParagraph = document.createElement('E')
                 nameParagraph.textContent = `Name: ${uniName}`
                 searchResults.appendChild(nameParagraph);
     
                 const shopCountry = searchEUKOS.country;
-                const countryParagraph = document.createElement('p')
+                const countryParagraph = document.createElement('E')
                 countryParagraph.textContent = `Country: ${shopCountry}`
                 searchResults.appendChild(countryParagraph);
     
@@ -70,17 +70,11 @@ function postComments(){
         event.target.reset();
     })
 }
-
-// Make a POST request to store user info in the server
 function postUserInfo(){
-    // Grab user info form
     const form = document.getElementById("user-address");
-
-    // Listen to user submission
     form.addEventListener('submit', (event) => {
         event.preventDefault()
 
-        // Capture user info
         const userName = event.target['user-name'].value;
         const userEmail = event.target['user-email'].value;
         console.log(userName, userEmail);
@@ -90,7 +84,6 @@ function postUserInfo(){
             userEmail: userEmail
         };
 
-        // make a POST request to the json-server
         fetch('http://localhost:3000/UserData', {
             method: 'POST',
             headers: {
