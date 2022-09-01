@@ -173,7 +173,7 @@
     color: #4b6cb7;
   }
   #hide {
-    display: inline-flex;
+    display: contents;
   }
   .main-welcome {
     display: flex;
