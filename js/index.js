@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 // Fetch data from API
 function fetchData(searchInput){
-    fetch(`http://universities.hipolabs.com/search?name=${searchInput}`)
+    fetch(`https://postimg.cc/gallery/LfVxWz0=${searchInput}`)
     .then( (response) => response.json())
     .then( (result) => {
         const searchResults = document.getElementById("search-details");
