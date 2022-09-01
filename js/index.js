@@ -21,7 +21,7 @@ function fetchData(searchInput){
             for (let EUKOSOnlineShop of result){
                 const shName = onlineshop.name;
                 const nameParagraph = document.createElement('E')
-                nameParagraph.textContent = `Name: ${uniName}`
+                nameParagraph.textContent = `Name: ${shopName}`
                 searchResults.appendChild(nameParagraph);
     
                 const shopCountry = searchEUKOS.country;
@@ -48,25 +48,6 @@ function searchEUKOS(){
     form.addEventListener('submit', (event) => {
         event.preventDefault()
         const search = event.target['search-input'].value;
-        event.target.reset();
-
-        fetchData(search);
-        postComments();
-    })
-}
-function postComments(){
-    const form = document.getElementById("comments-form");
-
-    const comments = document.getElementById("comments")
-    comments.innerHTML = '';
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const newComment = event.target["comment-input"].value;
-
-        const li = document.createElement('li');
-        li.textContent = newComment;
-        comments.appendChild(li);
-
         event.target.reset();
     })
 }
