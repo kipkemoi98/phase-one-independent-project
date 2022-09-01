@@ -173,21 +173,8 @@
     color: #4b6cb7;
   }
   #hide {
-    display: none;
+    display: inline-flex;
   }
-  .main-welcome {
-    display: flex;
-    gap: 90px;
-  }
-  .carousel {
-    height: 500px;
-    overflow: hidden;
-    margin-right: 30px;
-  }
-  .main-welcome-msg {
-    width: 500px;
-    height: 200px;
-  }
-  .main-welcome-msg {
-    margin-top: 80px;
+  #wine-shop{
+    height: 20vh;
   }
