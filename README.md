@@ -9,9 +9,9 @@
 
 Many people faces alot challenges may be during the night in search of places to buy their drinks. You don't have to worry more casue we are their to help you.
 
-## Requirements.
-# 1 Either a working computer, 
-# 2 phone, tablet or a laptop.
+### Requirements.
+## 1 Either a working computer, 
+## 2 phone, tablet or a laptop.
 
 ## Project Guide
 ### 1. Search University
