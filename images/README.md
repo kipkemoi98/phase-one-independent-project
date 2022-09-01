@@ -16,7 +16,7 @@ Many people faces alot challenges may be during the night in search of places to
 ## Project Guide
 ### 1. Search University
 In the search box, you can either search the price of the liquoror the name , the first name or any word that can assist you get your intended search result. On pressing the search button, the following will be displayed:
-1. Full names of all the wines 
+1. Names of all the wines 
 2. All the prices 
 3. Link to pay your order 
 ---
