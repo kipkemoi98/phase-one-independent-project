@@ -22,7 +22,7 @@ In the search box, you can either search the price of the liquoror the name , th
 ---
 
 ## Conclusion
-This is a simple online liquor shop website that can save your time visiting websites that doesn't provide you with the information that you need. It's a young project, ***a work in progress.***
+This is a simple online liquor shop website that can save your time visiting websites that doesn't provide you with the information that you need. It's a young project.
 
 ---
 
