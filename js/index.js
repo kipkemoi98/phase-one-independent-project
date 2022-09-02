@@ -17,7 +17,12 @@ function fetchData(searchInput){
         alert(error.message);
     })
 }
-
+const search = () =>{
+    const searchbox = document.getElementById("search-item").values.toUpperCase();
+    conststoreitems = document.getElementById("products")
+    const product = document.querySelectorAll("product")
+    const pname = document.getElementsByTagName("h2")
+}
 
 
 function searchEUKOS(){
