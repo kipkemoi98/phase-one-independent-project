@@ -64,7 +64,7 @@ function postUserInfo() {
         const password = document.querySelector("password");
         const submit = document.querySelector("submit")
 
-        submit.addEventListener("click", (event))=>{
+        submit.addEventListener('click', (event))=>{
             event.preventDefault();
         }
 
