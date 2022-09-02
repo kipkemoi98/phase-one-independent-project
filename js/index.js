@@ -1,47 +1,25 @@
-// INTERACT WITH THE DOM
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Call search for name of the shop function
+    
     searchEUKOSOnlineShop();
 
-    // POST user info to the server
+    
     postUserInfo();
 })
-// Fetch data from API
+
 function fetchData(searchInput){
-    fetch(`https://postimg.cc/gallery/LfVxWz0=${searchInput}`)
+    fetch(`https://seller.flipkart.com/api-docs/FMSAPI.html${searchInput}`)
     .then( (response) => response.json())
     .then( (result) => {
         const searchResults = document.getElementById("search-details");
         searchResults.innerHTML = ''; 
-        
-        if (result.length === 0){
-            alert('No other shop matching EUKOS')
-        } else {
-            for (let EUKOSOnlineShop of result){
-                const shName = onlineshop.name;
-                const nameParagraph = document.createElement('E')
-                nameParagraph.textContent = `Name: ${shopName}`
-                searchResults.appendChild(nameParagraph);
-    
-                const shopCountry = searchEUKOS.country;
-                const countryParagraph = document.createElement('E')
-                countryParagraph.textContent = `Country: ${shopCountry}`
-                searchResults.appendChild(countryParagraph);
-    
-                const uniWebsite = EUKOS['web_pages'][0]; const webLink = document.createElement('a');
-                webLink.textContent = 'EUKOS Online shop'
-                webLink.href = ShopWebsite;
-                searchResults.appendChild(webLink);
-                
-                
-            }
-        }
     })
     .catch( (error) => {
         alert(error.message);
     })
 }
+
+
+
 function searchEUKOS(){
     const form = document.getElementById("search-form")
 
