@@ -116,7 +116,7 @@
   }
   .login {
     width: 380px;
-    padding: 8% 0 0;
+    padding: 20% 0 0;
     margin: auto;
   }
   
@@ -125,10 +125,11 @@
     z-index: 1;
     background: #ffffff;
     border-radius: 10px;
-    max-width: 360px;
+    max-width: 370px;
     margin: 0 auto 100px;
-    padding: 45px;
+    padding: 10px;
     text-align: center;
+    padding-top: -45px;
   }
   
   .form input {
@@ -174,17 +175,6 @@
   }
   #hide {
     display: contents;
-  }
-  .main-welcome {
-    display: flex;
-    gap: 90px;
-  }
-  .main-welcome-msg {
-    width: 500px;
-    height: 200px;
-  }
-  .main-welcome-msg {
-    margin-top: 80px;
   }
   .products{
     display: flex;
